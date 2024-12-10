@@ -9,6 +9,13 @@ export type Wine = {
   purchaseDate: string;
   optimalDate: string;
   notes?: string;
+  image?: string;
+  rating?: number;
+  consumptionHistory?: {
+    date: string;
+    rating: number;
+    notes?: string;
+  }[];
 };
 
 export type WineStats = {
@@ -20,4 +27,6 @@ export type WineStats = {
     rose: number;
     sparkling: number;
   };
+  averageRating?: number;
+  consumedBottles?: number;
 };
