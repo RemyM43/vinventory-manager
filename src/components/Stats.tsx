@@ -1,6 +1,6 @@
 import { WineStats } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wine, GlassWine, Grape } from "lucide-react";
+import { Wine, Grape } from "lucide-react";
 
 interface StatsProps {
   stats: WineStats;
@@ -21,7 +21,7 @@ export const Stats = ({ stats }: StatsProps) => {
       <Card className="bg-white/50 backdrop-blur">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-sm font-medium">Collection Value</CardTitle>
-          <GlassWine className="h-4 w-4 text-wine" />
+          <Wine className="h-4 w-4 text-wine" />
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
